@@ -22,6 +22,8 @@ android {
         release {
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            // 个人分发用 debug 密钥签名（密钥只在本机 ~/.android，不入库）
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
