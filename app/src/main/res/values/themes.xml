@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose 接管全部 UI，仅提供一个无标题栏的起始主题 -->
+    <style name="Theme.WolWake" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
